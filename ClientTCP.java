@@ -33,8 +33,8 @@ public class ClientTCP {
             DataOutputStream out= new DataOutputStream(clientSocket.getOutputStream());
             out.writeBytes(message + "\n");
         
-//            out.flush();
-//            out.close();
+            out.flush();
+            out.close();
         }
     }
     
